@@ -18,7 +18,7 @@ const test = async () => {
   "credentials": "omit"
 });
 	const movies = await response.json();
-	document.getElementById('joke').innerHTML(movies.joke)
+	document.getElementById('joke').innerHTML = movies.joke
 	console.log(movies)
 }
 test();
