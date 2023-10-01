@@ -1,4 +1,4 @@
-const test = async () => {
+const getJoke = async () => {
 	const response = await fetch("https://v2.jokeapi.dev/joke/Programming,Dark?blacklistFlags=political,racist,sexist", {
   "headers": {
     "accept": "*/*",
@@ -17,8 +17,9 @@ const test = async () => {
   "mode": "cors",
   "credentials": "omit"
 });
-	const movies = await response.json();
-	document.getElementById('joke').innerHTML = movies.joke
-	console.log(movies)
+	const joke = await response.json();
+	document.getElementById('joke').innerHTML = joke.joke
+	console.log(joke)
 }
-test();
+
+getJoke();
