@@ -1,6 +1,6 @@
 body {
-	background-color: #6e6565;
-	padding: 60px;
+	display: flex;
+	justify-content: center;
 }
 .bubble {
 	position: relative;
