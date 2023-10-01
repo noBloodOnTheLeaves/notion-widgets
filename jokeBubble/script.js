@@ -18,7 +18,13 @@ const getJoke = async () => {
   "credentials": "omit"
 });
 	const joke = await response.json();
-	document.getElementById('joke').innerHTML = joke.joke
+  if(joke?.joke !== undefined){
+    document.getElementById('joke').innerHTML = joke.joke
+  }
+  if(joke?.setup !== undefined){
+    document.getElementById('joke').innerHTML = `<p>${joke.setup}</p><p>${joke.delivery}</p>`
+  }
+	
 	console.log(joke)
 }
 
