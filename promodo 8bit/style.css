@@ -1,5 +1,5 @@
 #root {
-    background: #616161;
+    background: #EEEBD0;
     width: 350px;
     height: 170px;
     margin: auto;
@@ -18,7 +18,7 @@
   .pomodoro {
     height: 70px;
     display: flex;
-    background: #1f1f1f;
+    background: #FEDC3D;
     justify-content: center;
     box-shadow: 1px 1px 1px #888888;
   }
